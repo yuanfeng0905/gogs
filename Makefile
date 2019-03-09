@@ -7,7 +7,7 @@ GENERATED  := pkg/bindata/bindata.go public/css/gogs.css
 
 OS := $(shell uname)
 
-TAGS = ""
+TAGS = "sqlite"
 BUILD_FLAGS = "-v"
 
 RELEASE_ROOT = "release"

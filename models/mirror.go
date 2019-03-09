@@ -69,7 +69,7 @@ func (m *Mirror) AfterSet(colName string, _ xorm.Cell) {
 
 // ScheduleNextSync calculates and sets next sync time based on repostiroy mirror setting.
 func (m *Mirror) ScheduleNextSync() {
-	m.NextSync = time.Now().Add(time.Duration(m.Interval) * time.Hour)
+	m.NextSync = time.Now().Add(time.Duration(m.Interval) * time.Second)
 }
 
 // findPasswordInMirrorAddress returns start (inclusive) and end index (exclusive)
